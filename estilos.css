@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,300&display=swap');
 
+:root {
+    --font-principal: Nunito;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -11,51 +15,63 @@ body {
     background-color:white;
 }
 
-nav {
+#nav {
     background-color: silver;
-    padding: 10px 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 
 }
 
-nav ul.esquerda li {
+#nav ul.esquerda li {
     float: left;
     list-style: none;
-    background-color: silver;
-    padding: 5px 10px;
-    border-radius: 16px;
+    display: inline;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
- nav img {
-    width: 100px;
+#nav img {
+    width: 50px;
 }
 
-nav ul.texto li {
+#nav ul.texto li {
     text-align: center;
     text-decoration: none;
     color: black;
     list-style: none;
+    font-size: 30px;
+    padding: 15px;
+}
+
+#nav ul.direita li { 
+    float: right;
+    border-radius: 10px;
+    list-style: none;
+    color: black;
     font-size: 25px;
-    
+    background-color: darkgrey;
 }
 
-nav ul.direita li { 
-    text-align: right;
-    
-
+#nav ul.direita2 li {
+    float: right;
+    border-radius: 10px;
+    list-style: none;
+    color: black;
+    font-size: 25px;
+    background-color: darkgrey;
 }
 
-.conteiner {
+.container {
     width: 1140px;
     max-width: 100%;
     margin: auto;
 }
 
-.clearfix{}
-
-.clearfix::before,
-
-.clearfix ::after{
-    content: "";
+.crearfix::before,
+.clearfix::after{
+    content:"";
     display: block;
     clear: both;
 }
@@ -74,7 +90,7 @@ nav ul.direita li {
     width: 25%;
 }
 .col-4{
-    width: 33.32%;
+    width: 33.33%;
 }
 .col-5{
     width: 41.61%;
@@ -99,10 +115,4 @@ nav ul.direita li {
 }
 .col-12{
     width: 100%;
-}
-
-nav ul.direita {
-    width: 65.65%;
-    list-style: none;
-    align-items: center;
 }
