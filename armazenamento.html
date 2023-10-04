@@ -1,14 +1,98 @@
 <!DOCTYPE html>
+<link rel="stylesheet" href="SCI.html">
 <html>
-    <head>
-      <title>Pagina de armazenamento</title>
-    </head>
-    <body>
-      <h1>Calculadora de Orçamento.</h1>
-      <h2>Informação dos Participantes.</h2>
-        <form id="ParticipantesInform">
-        <label for="numeroParticipantes">Número dos Participantes</label>
-        <input type="number" asdasdasdasasd>
-        </form>
-    </body>
+
+<head>
+    <title>Pagina de armazenamento</title>
+</head>
+
+<body>
+
+    <h1>Calculadora de Orçamento para o Evento SCI</h1>
+    <h2>Dados do Evento</h2>
+    <form id="participantesForm">
+        <label for="numeroParticipantes">Numero de Participantes</label>
+        <input type="number" id="numeroParticipantes" name="numeroParticipantes" required>
+    </form>
+
+    <table>
+        <tr>
+            <th>Produto</th>
+            <th>Quantidade por Participante</th>
+            <th>Preço por Unidade</th>
+            <th>Total</th>
+        </tr>
+
+        <tr>
+            <th>Café</th>
+            <th>
+                <form id="quantidadeCafe">
+                    <input type="number" id="quantidadeCafe" name="quantidadeCafe" required>
+                </form>
+            </th>
+
+            <th>
+                <form id="precoUnidade">
+                    <input type="number" id="precoUnidade" name="precoUnidade" required>
+                </form>
+            </th>
+        </tr>
+
+        <tr>
+            <th>Bolo</th>
+
+            <th>
+                <form id="precoUnidade">
+                    <input type="number" id="precoUnidade" name="precoUnidade" required>
+                </form>
+            </th>
+
+            <th>
+                <form id="total">
+                    <input type="number" id="total" name="total" required>
+                </form>
+            </th>
+        </tr>
+
+        <tr>
+            <th>Cachorro-Quente</th>
+
+            <th>
+                <form id="precoUnidade">
+                    <input type="number" id="precoUnidade" name="precoUnidade" required>
+                </form>
+            </th>
+
+            <th>
+                <form id="total">
+                    <input type="number" id="total" name="total" required>
+                </form>
+            </th>
+        </tr>
+    </table>
+
+    <h1>Custos de Itens de Divulgação</h1>
+    <table>
+        <tr>
+            <th>Item</th>
+            <th>Quantidade</th>
+            <th>Preço por Unidade</th>
+            <th>Total</th>
+        </tr>
+        <tr>
+            <th>Banner</th>
+            <th>
+                <form id="quantidadeBanner">
+                    <input type="number" id="quantidadeBanner" name="quantidadeBanner" required>
+                </form>
+            </th>
+            <th>
+                <form id="precoUnidade">
+                    <input type="number" id="precoUnidade" name="precoUnidade" required>
+                </form>
+            </th>
+        </tr>
+    </table>
+</body>
+
 </html>
