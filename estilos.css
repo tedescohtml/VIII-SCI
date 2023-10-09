@@ -23,14 +23,12 @@ body {
 }
 
 #nav ul.esquerda li {
-    float: left;
+    float:inline-start
     list-style: none;
     display: inline;
     padding-top: 5px;
-    padding-bottom: 5px;
-    margin-left: 5px;
-    margin-right: 5px;
-    ali
+    padding-bottom: 5px
+    
 }
 
 #nav img {
@@ -123,14 +121,11 @@ body {
 .col-12{
     width: 100%;
 }
- nav ul.direita3 li{
-    float: right;
-    border-radius: 10px;
-    list-style: none;
-    color: black;
+ .direita3 {
     font-size: 20px;
-    background-color: rgb(255, 255, 255);
-    text-decoration: none;
-    margin-top: 15px;
-    padding: 5px;
+    list-style: none;
+    float: right;
+    background-color: rgb(206, 123, 123);
+    text-align: center;
+
  }
