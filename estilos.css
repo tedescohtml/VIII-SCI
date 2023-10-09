@@ -127,5 +127,5 @@ body {
     float: right;
     background-color: rgb(206, 123, 123);
     text-align: center;
-
+    position:absolute;
  }
