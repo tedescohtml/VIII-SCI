@@ -19,12 +19,12 @@ body {
     background-color: rgb(188, 186, 201);
     padding-top: 10px;
     padding-bottom: 10px;
-    
+
 
 }
 
 #nav ul.esquerda li {
-    float: inline-start; 
+    float: inline-start;
     list-style: none;
     display: inline;
     padding-top: 5px;
@@ -142,10 +142,33 @@ body {
     background-color: rgb(168, 89, 89);
     text-align: center;
     position: absolute;
-    margin-top: 15px;}
+    margin-top: 15px;
+}
 
-    .hr{ 
-       border-color: black;
-       border-width: 2px;
+.hr {
+    border-color: black;
+    border-width: 2px;
 
-    }
+}
+
+.banner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 40px;
+    right: 0;
+}
+
+.banner::before {
+    content: "";
+    background-image: url('../img/img-1.jfif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    position: absolute;
+    opacity: 100;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
