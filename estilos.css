@@ -151,24 +151,28 @@ body {
 
 }
 
-.banner {
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 40px;
-    right: 0;
+
+.slider-container{
+height: 100%;
+width: 100%;
+position: relative;
+overflow: hidden; 
+text-align: center;
+
+
 }
 
-.banner::before {
-    content: "";
-    background-image: url('../img/img-1.jfif');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: top;
-    position: absolute;
-    opacity: 100;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
+
+.background {
+    background-color:darkcyan;
+    padding: 20px;
 }
+ .center{
+    text-align: left;
+    margin: 40px;
+ }
+
+
+
+
+
