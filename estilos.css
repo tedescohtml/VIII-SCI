@@ -6,26 +6,44 @@
     box-sizing: border-box;
 }
 
-body {
-    font-family: Nunito, Arial;
-    background-color:white;
-}
+.banner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 40px;
+    right: 0;
+    }
 
-header {
-    background-color: silver;
-    color: black;
-    text-align: center;
-    padding: 20px 20px 20px 20px;
-}
+    .slider-container {
+        height: 100%;
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+        text-align: center;
 
-header li {
-    list-style: none;
-    float: right;
-}
 
-nav img {
-    margin: 15px;
-    height: 100px;
-    border-radius: 30%;
-    float: left;
-}
+    }
+
+    .banner::before {
+        content: "";
+        background-image: url('../img/img-1.jfif');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: top;
+        position: absolute;
+        opacity: 100;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+    }
+
+    .background {
+        background-color: darkcyan;
+        padding: 20px;
+    }
+
+    .center {
+        text-align: left;
+        margin: 40px;
+    }
