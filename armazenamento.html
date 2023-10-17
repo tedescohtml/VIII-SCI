@@ -1,165 +1,17 @@
 <!DOCTYPE html>
-<link rel="stylesheet" href="SCI.html">
-<html>
-
+<html lang="en">
 <head>
-    <title>Pagina de armazenamento</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <link rel="stylesheet" href="estilos.css">
+    <script defer type="text/javascript" src="js/myscript.js"></script>
+    <title>Armazenamento</title>
 </head>
-
-<body>
-
-    <h1>Calculadora de Orçamento para o Evento SCI</h1>
+<body onload="recuperar()">
+    <h1>Calculadora de Orçamento do Evento</h1>
     <h2>Dados do Evento</h2>
-    <form id="participantesForm">
-        <label for="numeroParticipantes">Numero de Participantes:</label>
-        <input type="number" id="numeroParticipantes" name="numeroParticipantes" required>
-        <h3>Custo de Produtos Alimentítcios</h3>
-    </form>
-
-    <table>
-        <tr>
-            <th>Produto</th>
-            <th>Quantidade por Participante</th>
-            <th>Preço por Unidade</th>
-            <th>Total</th>
-        </tr>
-
-        <tr>
-            <th>Café</th>
-            <th>
-                <form id="quantidadeCafe">
-                    <input type="number" id="quantidadeCafe" name="quantidadeCafe" required>
-                </form>
-            </th>
-
-            <th>
-                <form id="precoUnidade">
-                    <input type="number" id="precoUnidade" name="precoUnidade" required>
-                </form>
-            </th>
-        </tr>
-
-        <tr>
-            <th>Bolo</th>
-
-            <th>
-                <form id="precoUnidade">
-                    <input type="number" id="precoUnidade" name="precoUnidade" required>
-                </form>
-            </th>
-
-            <th>
-                <form id="total">
-                    <input type="number" id="total" name="total" required>
-                </form>
-            </th>
-        </tr>
-
-        <tr>
-            <th>Cachorro-Quente</th>
-
-            <th>
-                <form id="precoUnidade">
-                    <input type="number" id="precoUnidade" name="precoUnidade" required>
-                </form>
-            </th>
-
-            <th>
-                <form id="total">
-                    <input type="number" id="total" name="total" required>
-                </form>
-            </th>
-        </tr>
-    </table>
-
-    <h1>Custos de Itens de Divulgação</h1>
-    <table>
-        <tr>
-            <th>Item</th>
-            <th>Quantidade</th>
-            <th>Preço por Unidade</th>
-            <th>Total</th>
-        </tr>
-        <tr>
-            <th>Banner</th>
-            <th>
-                <form id="quantidadeBanner">
-                    <input type="number" id="quantidadeBanner" name="quantidadeBanner" required>
-                </form>
-            </th>
-            <th>
-                <form id="precoUnidade">
-                    <input type="number" id="precoUnidade" name="precoUnidade" required>
-                </form>
-            </th>
-        </tr>
-        <tr>
-            <th>Crachá</th>
-            <th>
-                <form id="quantidadeCracha">
-                    <input type="number" id="quantidadeCracha" name="quantidadeCracha" required>
-                </form>
-            </th>
-            <th>
-                <form id="precoCracha">
-                    <input type="number" id="precoUnidade" name="precoUnidade" required>
-                </form>
-            </th>
-        </tr>
-        <tr>
-            <th>Camiseta</th>
-            <th>
-                <form id="quantidadeCamiseta">
-                    <input type="number" id="quantidadeCamiseta" name="quantidadeCamiseta" required>
-                </form>
-            </th>
-            <th>
-                <form id="precoCamiseta">
-                    <input type="number" id="precoUnidade" name="precoUnidade" required>
-                </form>
-            </th>
-        </tr>
-    </table>
-    <button id="salvarDados">Salvar Dados</button>
-    <h2>Custos Totais</h2>
-    <table>
-        <tr>
-            <th>Tipo</th>
-            <th>Total</th>
-        </tr>
-        <tr>
-            <th>Produtos Alimentítcios</th>
-            <th>
-                <form id="quantidadeProdutos">
-                    <input type="number">
-                </form>
-            </th>
-        </tr>
-        <tr>
-            <th>Divulgação</th>
-            <th>
-                <form id="divulgação">
-                    <input type="number">
-                </form>
-            </th>
-        </tr>
-        <tr>
-            <th>Custo Total do Evento</th>
-            <th>
-                <form id="custoTotal">
-                    <input type="number">
-                </form>
-            </th>
-        </tr>
-    </table>
-    <button id="calcularOrçamento">calcular Orçamento</button>
+    Inscritos: <input type="number" id="Inscritos" readonly><br>
+    <button: onclick;  
 </body>
-<script>
-    function imprimir(algo) {
-        console.log(algo)
-        document.write(algo + "<br>")
-    }
-
-    
-</script>
 </html>
