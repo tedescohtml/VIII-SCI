@@ -3,5 +3,5 @@ function gebi(id) {
 }
 
 function multiplicar() {
-    let 
+    let numero1
 }
