@@ -3,5 +3,5 @@ function gebi(id) {
 }
 
 function multiplicar() {
-    let numero1
+    let numero1 = gebi("n1").value
 }
