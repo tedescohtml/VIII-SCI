@@ -10,7 +10,6 @@
     box-sizing: border-box;
 }
 
-<<<<<<< HEAD
 .banner {
     position: absolute;
     top: 0;
@@ -52,7 +51,7 @@
         text-align: left;
         margin: 40px;
     }
-=======
+
 body {
     font-family: Nunito, Arial;
     background-color: rgb(255, 255, 255);
@@ -215,8 +214,47 @@ text-align: center;
     margin: 40px;
  }
 
+ body{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h4{
+    display: inline;
+}
+
+.container {
+display: flex;
+
+}
+
+.col-3 {
+    flex: 1;
+}
 
 
 
+div {
+    margin: 0px 10px 20px 5px;
+    align-items: center;
+}
 
->>>>>>> origin/main
+.title, .title2{
+display: flex;
+}
+
+.title h4{
+    margin-right: 200px;
+    margin-left: 10px;
+}
+
+.title2 h4{
+    
+    margin-right: 200px;
+    margin-left: 10px;
+}
+ 
+div input{
+  margin-bottom: 15px;
+}

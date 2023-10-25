@@ -1,23 +1,171 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE-edge">
-    <link rel="stylesheet" href="estilos.css">
-    <script defer type="text/javascript" src="js/myscript.js"></script>
-    <title>Armazenamento</title>
+    <title>calculadora de orçamento</title>
+    <link rel="stylesheet" href="assets/css/calculadora.css">
+
+    <script src="js/calculadora.js"></script>
 </head>
-<body onload="recuperar()">
-    <h1>Calculadora de Orçamento do Evento</h1>
-    <h2>Dados do Evento</h2>
-    Número de Participantes: <input type="number" id="participantes" name="participantes">
-    <h3>Custos de Produtos Alimentícios</h3>
-    <table>
-        <tr>Produto</tr>
-        <tr>Quantidade por Poparticipantes</tr>
-        <tr>Preço por Unidade</tr>
-        <tr>Total</tr>
-    </table>
+
+<body>
+    <form id="calculadora">
+
+        <fieldset align="left" ; style="width: 70%; margin: 0px auto;">
+
+            <h1>calculadora de orçamento para o evento SCI</h1>
+            <h3>dados do evento</h3>
+
+            numero de participantes:<input id="idparticipantes" name="participantes" type="number"><br>
+
+            <h3>custo de produtos alimenticios</h3>
+
+            <div class="title">
+                <tabel>
+                    <thead>
+                        <tr>
+                            <th>Produto</th>
+                            <th>Quantidade por Participante</th>
+                            <th>Preço por Unidade</th>
+                            <th>Total</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>cafe</td>
+                            <th><input type="number" id=""</th>
+                        </tr>
+                    </tbody>
+
+
+                </tabel>
+            </div>
+
+            <div class="container">
+
+                <div class="comida">
+                    <div class="col-3">
+                        <label for="idcafe">cefé:</label>
+                        <input id="idcafe" name="cafe" type="number" required>
+
+                        <label for="idbolo">Bolo:</label>
+                        <input id="idbolo" name="bolo" type="number" required>
+
+                        <label for="idcachorro">Cachorro-quente:</label>
+                        <input id="idcachorro" name="cachorro" type="number" required>
+                    </div>
+                </div>
+
+                <div class="valor">
+                    <div class="col-3">
+                        <input id="ValorCafe" name="ValorCafe" type="text" required>
+
+
+                        <input id="ValorBolo" name="ValorBolo" type="text" required>
+
+
+                        <input id="ValorCachorro" name="ValorCachorro" type="text" required>
+                    </div>
+                </div>
+
+                <div class="totalA">
+                    <div class="col-3">
+                        <input id="idTotal1" type="text" readonly>
+                        <input id="idTotal2" type="text" readonly>
+                        <input id="idTotal3" type="text" readonly>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+
+            <h3>custo de itens de divulgação</h3>
+
+            <div class="title2">
+                <h4>Quantidade</h4>
+                <h4>Preço por unidade</h4>
+                <h4>total</h4>
+            </div>
+            <div class="container">
+
+                <div class="comida">
+                    <div class="col-3">
+                        <label for="idBanner">Banner:</label>
+
+                        <input id="idBanner" name="Banner" type="text" required>
+                        <label for="idCrachá">Crachá:</label>
+
+                        <input id="idCrachá" name="Crachá" type="text" required>
+                        <label for="idCamiseta">Camiseta:</label>
+
+                        <input id="idCamiseta" name="Camiseta" type="text" required>
+                    </div>
+                </div>
+
+                <div class="valor">
+                    <div class="col-3">
+                        <input id="ValorBanner" name="ValorBanner" type="text" required>
+
+
+                        <input id="ValorCrachá" name="ValorCrachá" type="text" required>
+
+
+                        <input id="ValorCamiseta" name="ValorCamiseta" type="text" required>
+                    </div>
+                </div>
+
+                <div class="totalB">
+                    <div class="col-3">
+                        <input id="idTotal4" type="text" readonly />
+                        <input id="idTotal5" type="text" readonly />
+                        <input id="idTotal6" type="text" readonly />
+                    </div>
+                </div>
+            </div>
+
+            <button onclick="calcularTotal(event)">somar</button>
+
+            <button onclick="salvar()">salvar dados</button>
+
+
+            <h3>custos totais</h3>
+
+            <div class="container">
+                <div class="list1">
+                    <h4>tipo</h4>
+                    <br>
+                    <ul>
+                        <li>produto alimenticios</li>
+                        <li>divulgação</li>
+                        <li>custo total do evento</li>
+                    </ul>
+                </div>
+
+                <div class="totalF">
+                    <h4>total</h4>
+                    <br>
+                    <input id="idtotalF1" type="text" readonly /><br>
+                    <input id="idtotalF2" type="text" readonly /><br>
+                    <input id="idtotalF0" type="text" readonly /><br>
+                </div>
+                <button onclick="bottonOrçamento(event)">calcular orçamento</button>
+            </div>
+
+
+            <form id="idForm" action="https://app.headlessforms.cloud/api/v1/form-submission/nkJtA1ewcj" method="POST">
+                <label for="idEmail">Meu E-mail</label>
+                <input type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 4}$" name="email" id="idEmail"
+                    required><br>
+                <textarea rows="5" cols="40" name="corpo" required></textarea><br>
+                <input type="submit" value="Enviar" onclick="">
+            </form>
+
+
+        </fieldset>
+    </form>
+
 </body>
-</html>

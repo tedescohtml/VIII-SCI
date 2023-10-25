@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculadora de orçamento</title>
+    <link rel="stylesheet" href="assets/css/calculadora.css">
+</head>
+
+<body>
+    <h1>Dados do Evento</h1>
+    Número de Participantes:
+    <input type="number" id="numeroParticipantes">
+    <h2>Custos de Produtos Alimentícios</h2>
+    <tabel>
+        <thead>
+            <tr>
+                <th>Produto</th>
+                <th>Quantidade por Participante</th>
+                <th>Preço por Unidade</th>
+                <th>Total</th>
+            </tr><br>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Café</td>
+                <input type="number" id="qtdaCafe" name="qtdaCafe" required>
+                <input type="number" id="precoCafe" name="precoCafe" required>
+            </tr><br>
+            <tr>
+                <td>Bolo</td>
+                <input type="number" id="qtdaBolo" name="qtdaBolo" required>
+                <input type="number" id="precoBolo" name="precoBolo" required>
+            </tr><br>
+            <tr>
+                <td>Cachorro-Quente</td>
+                <input type="number" id="qtdaCachorro" name="qtdaCachorro" required>
+                <input type="number" id="precoCachorro" name="precoCachorro" required>
+            </tr><br>
+            <h3>Custos de Itens de Divulgação</h3>
+            <tr>
+                <th>Item</th>
+                <th>Quantidade</th>
+                <th>Preço por Unidade</th>
+                <th>Total</th>
+            </tr><br>
+            <tr>
+                <td>Banner</td>
+                <input type="number" id="qtdaQuantidade" name="qtdaQuantidade" required>
+                <input type="number" id="precoBanner" name="precoBanner" required>
+            </tr><br>
+            <tr>
+                <td>Crachá</td>
+                <input type="number" id="qtdaCracha" name="qtdaCracha" required>
+                <input type="number" id="precoCracha" name="precoCracha" required>
+            </tr><br>
+            <tr>
+                <td>Camiseta</td>
+                <input type="number" id="qtdaCamiseta" name="qtdaCamiseta" required>
+                <input type="number" id="precoCamisa" name="precoCamisa" required>
+            </tr>
+            </table><br>
+            <button onclick="calcular">Salvar Dados</button>
+        </tbody>
+        <h4>Custos Totais</h4>
+        <tr>
+            <th>Tipo</th>
+            <th>Total</th>
+        </tr><br>
+        <tr>
+            <td>Produtos Alimentícios</td><br>
+            <td>Divulgação</td><br>
+            <td>Custo Total do Evento</td>
+        </tr>
+
+    </tabel>
+
+
+</body>
