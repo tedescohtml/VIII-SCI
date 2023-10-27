@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>calculadora de orçamento</title>
     <link rel="stylesheet" href="assets/css/calculadora.css">
+    <script  src="js/myscript.js"></script>
 </head>
 
 <body>
@@ -25,8 +26,9 @@
         <tbody>
             <tr>
                 <td>Café</td>
-                <input type="number" id="qtdaCafe" name="qtdaCafe" required>
-                <input type="number" id="precoCafe" name="precoCafe" required>
+                <input type="number" id="qtdaCafe" name="qtdaCafe" required onblur="multiplicarCafe()">
+                <input type="number" id="precoCafe" name="precoCafe" required onblur="multiplicarCafe()">
+                <input type="text" id="totalCafe" name="totalCafe" readonly>
             </tr><br>
             <tr>
                 <td>Bolo</td>
@@ -49,6 +51,7 @@
                 <td>Banner</td>
                 <input type="number" id="qtdaQuantidade" name="qtdaQuantidade" required>
                 <input type="number" id="precoBanner" name="precoBanner" required>
+                <input type="text" id="">
             </tr><br>
             <tr>
                 <td>Crachá</td>
