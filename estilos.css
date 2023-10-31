@@ -209,7 +209,7 @@ div.informações li img {
 
 div.meio img {
     border-radius: 50%;
-    width: 180px;
+    width: 150px;
     display: block;
     padding: 25px;
     padding-top: 5px;
@@ -219,8 +219,25 @@ div.meio img {
     border: 2px;
     border-style: dashed;
 }
+.link{
+    background-color: antiquewhite;
+    border-radius: 10px;
+}
+.floatright{
+    float: right;
+}
+
+.floatleft {
+    float: left;
+}
+#Maratona ul {
+    list-style: none;
+}
 div.outracor{
     background-color: lightskyblue;
+}
+#Maratona img {
+    padding: 15px;
 }
 div.outracor img {
     float: right;
@@ -317,6 +334,30 @@ section.maratona {
     text-align: center;
 }
 
+.img66{
+    float: right;
+    width: 350px;
+}
+
+#Maratona{
+    background-color: cornflowerblue;
+}
+
+#Maratona img {
+    width: 300px;
+
+    float: right;
+}
+
+.textmaratona {
+    list-style: none;
+text-align: center;
+}
+.vaidarcerto{
+    list-style: none;
+    font-size: medium;
+    float: left;
+}
 .footerdecoration {
     background-color: bisque;
 }
