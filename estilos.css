@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,300&display=swap');
+
+:root {
+    --font-principal: Nunito;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -5,5 +11,357 @@
 }
 
 body {
-    background-color: darkgray;
+    font-family: Nunito, Arial;
+    background-color: rgb(255, 255, 255);
+}
+
+#nav {
+    background-color: rgb(188, 186, 201);
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+
+}
+
+#nav ul.esquerda li {
+    float: inline-start;
+    list-style: none;
+    display: inline;
+    padding-top: 5px;
+    padding-bottom: 5px
+}
+
+#nav img {
+    width: 70px;
+    border-radius: 350%;
+}
+
+#nav ul.texto li {
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    list-style: none;
+    font-size: 25px;
+    padding: 15px;
+}
+
+#nav ul.direita li {
+    float: right;
+    border-radius: 10px;
+    list-style: none;
+    color: black;
+    font-size: 15px;
+    background-color: rgb(255, 255, 255);
+    text-decoration: none;
+    margin-top: 15px;
+    padding: 5px;
+}
+
+#nav ul.direita2 li {
+    float: right;
+    border-radius: 10px;
+    list-style: none;
+    color: black;
+    font-size: 15px;
+    background-color: rgb(255, 255, 255);
+    text-decoration: none;
+    margin-top: 15px;
+    padding: 5px;
+}
+
+.container {
+    width: 1140px;
+    max-width: 100%;
+    margin: auto;
+}
+
+.crearfix::before,
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+[class*='col-'] {
+    float: left;
+    padding-right: 15%;
+}
+
+.col-1 {
+    width: 8.33%;
+}
+
+.col-2 {
+    width: 16.66%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.33%;
+}
+
+.col-5 {
+    width: 41.61%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.31%;
+}
+
+.col-8 {
+    width: 66.64%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.3%;
+}
+
+.col-11 {
+    width: 91.63%;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+.direita3 {
+    font-size: 20px;
+    list-style: none;
+    float: right;
+    background-color: rgb(168, 89, 89);
+    text-align: center;
+    position: absolute;
+    margin-top: 15px;
+}
+
+.hr {
+    border-color: black;
+    border-width: 2px;
+
+}
+
+
+.slider-container {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+
+
+}
+
+
+.background {
+    background-color: rgb(176, 179, 176);
+    padding: 20px;
+}
+
+.center {
+    text-align: left;
+    margin: 40px;
+}
+
+
+div.informações {
+    background-color: rgb(106, 102, 98);
+    text-align: center;
+    font-size: 10px;
+    text-decoration: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+
+
+}
+
+.h1 {
+    padding: 15px;
+
+}
+
+
+
+
+.continuação {
+    float: right;
+    list-style: none;
+    margin-top: 5px;
+    background-color: beige;
+
+}
+
+.lista {
+    text-align: justify;
+    padding-left: 70px;
+    list-style: none;
+    font-weight: bold;
+    font-size: medium;
+    padding: 15px;
+    margin: 5px;
+}
+
+.k {
+    float: right;
+    display: block;
+}
+
+.img15 {
+    text-align: center;
+    border-color: black;
+    border-width: 3px;
+    width: 30px;
+
+}
+
+div.informações li img {
+    width: 500px;
+}
+
+
+.meio {
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: x-large;
+    list-style: none;
+    padding: 7px;
+    background-color: rgb(193, 193, 193);
+
+}
+
+div.meio img {
+    border-radius: 50%;
+    width: 180px;
+    display: block;
+    padding: 25px;
+    padding-top: 5px;
+    padding-bottom: 15px;
+    margin: 80px;
+    text-align: center;
+    border: 2px;
+    border-style: dashed;
+}
+div.outracor{
+    background-color: lightskyblue;
+}
+div.outracor img {
+    float: right;
+    display:flex
+}
+.meio1 {}
+
+div.jogos {
+    font-size: small;
+}
+
+.textjogos {
+    float: left;
+}
+
+main.first {
+    background-color: rgb(83, 81, 80);
+}
+
+main.first img {
+    width: 450px;
+    padding: 15px;
+}
+
+div.meio img {
+    width: 150px;
+}
+
+section.jogos {
+    background-color: rgb(31, 39, 36);
+    text-align: center;
+    font-size: small;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.textjogos {
+    text-align: center;
+    padding: 15px;
+
+}
+
+.img12 {
+    float: left;
+    padding: 10px;
+    padding-left: 5px;
+}
+
+.padding {
+    padding: 40px;
+}
+
+.centertext {
+    text-align: center;
+}
+
+.red {}
+
+.center {
+    margin: 40px;
+    display: block;
+    padding: 10px;
+}
+
+.txt {
+    text-align: center;
+}
+
+.textooo {
+    font-size: large;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+section.informaçõesdosjogos {
+    background-color: antiquewhite;
+}
+
+.centra {
+    text-align: center;
+}
+
+section.maratona {
+    background-color: rgb(167, 171, 164);
+
+}
+
+.txts {
+    text-align: center;
+    padding: 20px;
+    padding-top: 100px;
+}
+
+.float {
+    display: block;
+    padding: 10px;
+}
+
+.espaço {
+    padding: 20px;
+}
+
+#textofooter {
+    color: cadetblue;
+    font-size: small;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+}
+
+.footerdecoration {
+    background-color: bisque;
 }
