@@ -10,42 +10,35 @@
     box-sizing: border-box;
 }
 
+img {
+    width: 100%;
+}
+
 body {
     font-family: Nunito, Arial;
     background-color: rgb(255, 255, 255);
 }
 
-#nav {
+nav {
     background-color: rgb(188, 186, 201);
     padding-top: 10px;
     padding-bottom: 10px;
-
-
 }
 
-#nav ul.esquerda li {
-    float: inline-start;
+nav ul.esquerda li {
+    float: left;
     list-style: none;
     display: inline;
     padding-top: 5px;
     padding-bottom: 5px
 }
 
-#nav img {
+nav img {
     width: 70px;
-    border-radius: 350%;
+    border-radius: 50%;
 }
 
-#nav ul.texto li {
-    text-align: center;
-    text-decoration: none;
-    color: black;
-    list-style: none;
-    font-size: 25px;
-    padding: 15px;
-}
-
-#nav ul.direita li {
+nav ul.direita li {
     float: right;
     border-radius: 10px;
     list-style: none;
@@ -53,20 +46,18 @@ body {
     font-size: 15px;
     background-color: rgb(255, 255, 255);
     text-decoration: none;
-    margin-top: 15px;
-    padding: 5px;
+    margin-top: 25px;
+    margin-right: 10px;
+    padding: 5px 15px;
 }
 
-#nav ul.direita2 li {
-    float: right;
-    border-radius: 10px;
-    list-style: none;
-    color: black;
-    font-size: 15px;
-    background-color: rgb(255, 255, 255);
+nav ul.direita li:hover {
+    background-color: beige;
+}
+
+a {
     text-decoration: none;
-    margin-top: 15px;
-    padding: 5px;
+    color: #222;
 }
 
 .container {
@@ -84,7 +75,7 @@ body {
 
 [class*='col-'] {
     float: left;
-    padding-right: 15%;
+    padding-right: 5px;
 }
 
 .col-1 {
@@ -135,15 +126,6 @@ body {
     width: 100%;
 }
 
-.direita3 {
-    font-size: 20px;
-    list-style: none;
-    float: right;
-    background-color: rgb(168, 89, 89);
-    text-align: center;
-    position: absolute;
-    margin-top: 15px;
-}
 
 .hr {
     border-color: black;
@@ -190,17 +172,6 @@ div.informações {
 
 }
 
-
-
-
-.continuação {
-    float: right;
-    list-style: none;
-    margin-top: 5px;
-    background-color: beige;
-
-}
-
 .lista {
     text-align: justify;
     padding-left: 70px;
@@ -209,11 +180,6 @@ div.informações {
     font-size: medium;
     padding: 15px;
     margin: 5px;
-}
-
-.k {
-    float: right;
-    display: block;
 }
 
 .img15 {
@@ -260,7 +226,6 @@ div.outracor img {
     float: right;
     display:flex
 }
-.meio1 {}
 
 div.jogos {
     font-size: small;
@@ -272,11 +237,6 @@ div.jogos {
 
 main.first {
     background-color: rgb(83, 81, 80);
-}
-
-main.first img {
-    width: 450px;
-    padding: 15px;
 }
 
 div.meio img {
@@ -310,16 +270,11 @@ section.jogos {
     text-align: center;
 }
 
-.red {}
 
 .center {
     margin: 40px;
     display: block;
     padding: 10px;
-}
-
-.txt {
-    text-align: center;
 }
 
 .textooo {
@@ -331,7 +286,7 @@ section.informaçõesdosjogos {
     background-color: antiquewhite;
 }
 
-.centra {
+.center {
     text-align: center;
 }
 
