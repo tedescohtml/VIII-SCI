@@ -149,22 +149,36 @@ a {
     background-color: rgb(176, 179, 176);
     padding: 20px;
 }
-
+.imgapoiadores{
+    width:200px ;
+}
 .center {
     text-align: left;
-    margin: 40px;
+    float: right;
+    font-size: larger;
 }
 
 
-div.informações {
+div.info{
     background-color: rgb(106, 102, 98);
     text-align: center;
     font-size: 10px;
     text-decoration: none;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: aliceblue;
 
+.width{
+    width: ;
+}
+}
+#jogos img{
+    width: 300px;
+}
+.sessao{
 
-
+}
+div.ins{
+    background-color:brown;
 }
 
 .h1 {
@@ -179,7 +193,6 @@ div.informações {
     font-weight: bold;
     font-size: medium;
     padding: 15px;
-    margin: 5px;
 }
 
 .img15 {
@@ -262,17 +275,30 @@ div.meio img {
 
 section.jogos {
     background-color: rgb(31, 39, 36);
-    text-align: center;
-    font-size: small;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-
+.aeiou{
+    background-color: rgb(44, 46, 46);
+    padding: 15px;
+}
 .textjogos {
     text-align: center;
-    padding: 15px;
-
+color: white
 }
-
+.t{
+    text-align: center;
+}
+div{
+    color: aliceblue;
+}
+.oii{
+    padding: 15px;
+    
+}
+.back{
+    background-color: crimson;
+    text-align: center;
+}
 .img12 {
     float: left;
     padding: 10px;
@@ -299,9 +325,7 @@ section.jogos {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-section.informaçõesdosjogos {
-    background-color: antiquewhite;
-}
+
 
 .center {
     text-align: center;
@@ -348,10 +372,19 @@ section.maratona {
 
     float: right;
 }
-
+.work{
+    display: block;
+}
+.changes                {
+    font-size: large;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 25px;
+}
+#inscrevase{
+    background-color:darkslategrey;
+}
 .textmaratona {
     list-style: none;
-text-align: center;
 }
 .vaidarcerto{
     list-style: none;
