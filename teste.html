@@ -7,18 +7,21 @@
     <title>calculadora de orçamento</title>
     <link rel="stylesheet" href="assets/css/calculadora.css">
     <link rel="stylesheet" href="estilos.css">
-    <script  src="js/myscript.js"></script>
-</head>
-
-<script>
-window.onload = function recuperar() {
-    if (localStorage.getItem("total_inscritos")){
-        var totalInscritos = localStorage.getItem("total_inscritos");
-        totalInscritos = parseInt(totalInscritos, 10);
-        document.getElementById('numero_participantes').value = totalInscritos
-    }}
+    <link rel="script" href="formulario.html">
+    <script src="js/myscript.js"></script>
+    <script>
+        window.onload = function recuperar() {
+            if (localStorage.getItem("total_inscritos")) {
+                var totalInscritos = localStorage.getItem("total_inscritos");
+                totalInscritos = parseInt(totalInscritos, 10);
+                document.getElementById('numero_participantes').value = totalInscritos
+            }
+        }
 
     </script>
+
+</head>
+
 
 <body>
     <h1>Dados do Evento</h1>

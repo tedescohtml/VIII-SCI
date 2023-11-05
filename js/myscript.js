@@ -12,55 +12,62 @@ if (localStorage.getItem("total_inscritos")) {
 }
 
 function multiplicarCafe() {
+    let valorN0 = parseInt(gebi("numeroParticipantes").value)
     let valorN1 = parseInt(gebi("qtdaCafe").value)
     let valorN2 = parseInt(gebi("precoCafe").value)
-    let totalCafe = valorN1 * valorN2
+    let totalCafe = valorN0 * valorN1 * valorN2
     gebi("totalCafe").value = totalCafe
 }
 
 function multiplicarBolo() {
+    let valorN0 = parseInt(gebi("numeroParticipantes").value)
     let valorN3 = parseInt(gebi("qtdaBolo").value)
     let valorN4 = parseInt(gebi("precoBolo").value)
-    let totalBolo = valorN3 * valorN4
+    let totalBolo = valorN0 * valorN3 * valorN4
     gebi("totalBolo").value = totalBolo
 }
 
 function multiplicarCachorro() {
+    let valorN0 = parseInt(gebi("numeroParticipantes").value)
     let valorN5 = parseInt(gebi("qtdaCachorro").value)
     let valorN6 = parseInt(gebi("precoCachorro").value)
-    let totalCachorro = valorN5 * valorN6
+    let totalCachorro = valorN0 * valorN5 * valorN6
     gebi("totalCachorro").value = totalCachorro
 }
 
 function multiplicarBanner() {
+    let valorN0 = parseInt(gebi("numeroParticipantes").value)
     let valorN7 = parseInt(gebi("qtdaBanner").value)
     let valorN8 = parseInt(gebi("precoBanner").value)
-    let totalBanner = valorN7 * valorN8
+    let totalBanner = valorN0 * valorN7 * valorN8
     gebi("totalBanner").value = totalBanner
 }
 
 function multiplicarCracha() {
+    let valorN0 = parseInt(gebi("numeroParticipantes").value)
     let valorN9 = parseInt(gebi("qtdaCracha").value)
     let valorN10 = parseInt(gebi("precoCracha").value)
-    let totalCracha = valorN9 * valorN10
+    let totalCracha = valorN0 * valorN9 * valorN10
     gebi("totalCracha").value = totalCracha
 }
 
 function multiplicarCamiseta() {
+    let valorN0 = parseInt(gebi("numeroParticipantes").value)
     let valorN11 = parseInt(gebi("qtdaCamiseta").value)
     let valorN12 = parseInt(gebi("precoCamiseta").value)
-    let totalCamiseta = valorN11 * valorN12
+    let totalCamiseta = valorN0 * valorN11 * valorN12
     gebi("totalCamiseta").value = totalCamiseta
 }
+
 function somar() {
-    let valorc1 = parseInt(gebi("resultado1").value)
-    let valorc2 = parseInt(gebi("resultado2").value)
-    let valorc3 = parseInt(gebi("resultado3").value)
+    let valorN1 = parseInt(gebi("resultado1").value)
+    let valorN2 = parseInt(gebi("resultado2").value)
+    let valorN3 = parseInt(gebi("resultado3").value)
     let totalalimentos = valorc1 + valorc2 + valorc3
     gebi("totalalimentos").value = totalalimentos
-    let valord1 = parseInt(gebi("resultado4").value)
-    let valord2 = parseInt(gebi("resultado5").value)
-    let valord3 = parseInt(gebi("resultado6").value)
+    let valorN4 = parseInt(gebi("resultado4").value)
+    let valorN5 = parseInt(gebi("resultado5").value)
+    let valorN6 = parseInt(gebi("resultado6").value)
     let totaldivul = valord1 + valord2 + valord3
     gebi("totaldivul").value = totaldivul
     let valort1 = parseInt(gebi("totalalimentos").value)
@@ -112,7 +119,7 @@ function montar() {
     gebi('texto').value = "O evento contando com " + inscritos + " inscritos vendeu " + qtdCafe + " cafés rendendo R$" + totalCafe + ", vendeu " + qtdBolo + " bolos rendendo R$" + totalBolo
         + ", vendeu " + qtdHotdog + " cachorros-quentes  rendendo R$" + totalHotdog + ",  vendeu " + qtdBanner + " benners rendendo R$" + totalBanner + ", vendeu" + qtdCracha + " crachás rendendo R$"
         + totalCracha + ", vendeu " + qtdCamiseta + " camisetas rendendo R$" + totalCamiseta + "." + "O evento lucrou R$" + pdrAlimentos + " com alimentos" + ", com divulgação lucrou "
-        + pdrDivul + " ao total lucrou R$" + pdrTotal + " - feito por Allan F.Fantin e Arthur Gaio - "
+        + pdrDivul + " ao total lucrou R$" + pdrTotal + " - feito por Ana, Donimar e Gabriel T. - "
 }
 
 
