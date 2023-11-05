@@ -2,17 +2,6 @@ function gebi(id) {
     return document.getElementById(id)
 }
 
-window.onload = function recuperar() {
-    if (localStorage.getItem("total_inscritos")){
-        var totalInscritos = localStorage.getItem("total_inscritos");
-        totalInscritos = parseInt(totalInscritos, 10);
-        document.getElementById('numero_participantes').value = totalInscritos
-    }
-}
-
-var totalInscritos = 100
-gebi("numeroParticipantes").value = totalInscritos
-
 localStorage.setItem("total_inscritos", totalInscritos.toString());
 if (localStorage.getItem("total_inscritos")) {
     var totalInscritos = localStorage.getItem("total_inscritos");
