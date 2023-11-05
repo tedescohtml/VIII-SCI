@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <script>        
+        function local() {
+            if (!localStorage.getItem('total_inscritos')) {
+                localStorage.setItem('total_inscritos', "0");
+            }
+            var totalInscritos = localStorage.getItem('total_inscritos');
+            totalInscritos = parseInt(totalInscritos, 10) + 1;
+            localStorage.setItem('total_inscritos', totalInscritos):
+        }
+
+        function validarEmail() {
+            var email = gebi("idEmail").value
+
+            if (!/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)) {
+                alert("Email inválido!")
+                return
+            }
+        }
+
+
+
+        function mascaraCPF(CPF) {
+            var valida = CPF.value;
+            valida = valida.replace(/\D/g, "");
+            valida = valida.replace(/(\d{3})(\d)/, "$1.$2");
+            valida = valida.replace(/(\d{3})(\d{1,2})$/, "$1-$2");
+            valida = valida.replace(/(\d{3}) (\d{1,2})$/, "$1-$2");
+            CPF.value = valida;
+        }
+    </script>
+</head>
+
+<body>
+    <main>
+        <form>
+            <fieldset>
+                <legend>Formulario</legend>
+
+                <div class="input-container">
+                    <label for="nome">Nome do aluno</label>
+                    <input type="text" name="nome" id="nome" placeholder="nome" required autofocus>
+                </div>
+
+                <div class="input-container">
+                    <label for="numerodaMatricula">Número da matricula</label>
+                    <input type="number" name="numerodaMatricula" id="numerodaMatricula" placeholder="Matricula"
+                        required autofocus>
+                </div>
+
+                <div class="input-container">
+                    <label for="CPF">CPF</label>
+                    <input type="text" autocomplete="off" maxlength="14" name="CPF" id="CPF" placeholder="CPF"
+                        oninput="mascaraCPF(this)" required autofocus>
+                </div>
+
+                <div class="input-container">
+                    <label for="Email">Digite seu Email</label>
+                    <input type="Email" name="Email" id="Email" placeholder="Email" required autofocus>
+                </div>
+
+                <div class="input-container">
+                    <label for="turma">Turmas</label>
+                    <select name="turma" id="turma" required>
+                        <option value="">Selecione</option>
+                        <option value="1">Info 1A</option>
+                        <option value="2">Info 1B</option>
+                        <option value="3">Info 2A</option>
+                        <option value="4">Info 2B</option>
+                        <option value="5">Info 3A</option>
+                        <option value="6">Info 3B</option>
+                    </select>
+                </div>
+
+                <button onclick="enviar(event)">Cadastrar</button>
+            </fieldset>
+        </form>
+    </main>
+</body>
+
+</html>
